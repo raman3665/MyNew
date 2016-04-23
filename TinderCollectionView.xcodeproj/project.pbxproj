@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E10844D1CBE5FFD00718BA9 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E10844C1CBE5FFD00718BA9 /* PinterestLayout.swift */; };
 		2E324CF81CBE181F00DE7552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E324CF71CBE181F00DE7552 /* AppDelegate.swift */; };
 		2E324CFA1CBE181F00DE7552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E324CF91CBE181F00DE7552 /* ViewController.swift */; };
 		2E324CFD1CBE182000DE7552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E324CFB1CBE182000DE7552 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		2E324D021CBE182000DE7552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E324D001CBE182000DE7552 /* LaunchScreen.storyboard */; };
 		2E324D0D1CBE182000DE7552 /* TinderCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E324D0C1CBE182000DE7552 /* TinderCollectionViewTests.swift */; };
 		2E324D181CBE182000DE7552 /* TinderCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E324D171CBE182000DE7552 /* TinderCollectionViewUITests.swift */; };
+		2E324D261CBE596A00DE7552 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E324D251CBE596A00DE7552 /* MyCollectionViewCell.swift */; };
+		2E8A4F611CC111FE00C757EB /* RAReorderableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A4F601CC111FE00C757EB /* RAReorderableLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E10844C1CBE5FFD00718BA9 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		2E324CF41CBE181F00DE7552 /* TinderCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E324CF71CBE181F00DE7552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E324CF91CBE181F00DE7552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		2E324D131CBE182000DE7552 /* TinderCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E324D171CBE182000DE7552 /* TinderCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCollectionViewUITests.swift; sourceTree = "<group>"; };
 		2E324D191CBE182000DE7552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E324D251CBE596A00DE7552 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E8A4F601CC111FE00C757EB /* RAReorderableLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAReorderableLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,16 @@
 		2E324CF61CBE181F00DE7552 /* TinderCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				2E324D271CBE59F900DE7552 /* photos */,
 				2E324CF71CBE181F00DE7552 /* AppDelegate.swift */,
 				2E324CF91CBE181F00DE7552 /* ViewController.swift */,
+				2E8A4F601CC111FE00C757EB /* RAReorderableLayout.swift */,
+				2E10844C1CBE5FFD00718BA9 /* PinterestLayout.swift */,
 				2E324CFB1CBE182000DE7552 /* Main.storyboard */,
 				2E324CFE1CBE182000DE7552 /* Assets.xcassets */,
 				2E324D001CBE182000DE7552 /* LaunchScreen.storyboard */,
 				2E324D031CBE182000DE7552 /* Info.plist */,
+				2E324D251CBE596A00DE7552 /* MyCollectionViewCell.swift */,
 			);
 			path = TinderCollectionView;
 			sourceTree = "<group>";
@@ -123,6 +133,13 @@
 				2E324D191CBE182000DE7552 /* Info.plist */,
 			);
 			path = TinderCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		2E324D271CBE59F900DE7552 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8A4F611CC111FE00C757EB /* RAReorderableLayout.swift in Sources */,
+				2E10844D1CBE5FFD00718BA9 /* PinterestLayout.swift in Sources */,
 				2E324CFA1CBE181F00DE7552 /* ViewController.swift in Sources */,
 				2E324CF81CBE181F00DE7552 /* AppDelegate.swift in Sources */,
+				2E324D261CBE596A00DE7552 /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +504,7 @@
 				2E324D1E1CBE182000DE7552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E324D1F1CBE182000DE7552 /* Build configuration list for PBXNativeTarget "TinderCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +513,7 @@
 				2E324D211CBE182000DE7552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E324D221CBE182000DE7552 /* Build configuration list for PBXNativeTarget "TinderCollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +522,7 @@
 				2E324D241CBE182000DE7552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
